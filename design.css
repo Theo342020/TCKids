@@ -1,0 +1,41 @@
+div>ul {
+	overflow: hidden;
+	background-color: rgba(14, 116, 199, 0.7);
+}
+li {
+	float: left;
+	margin: 20px;
+	margin-left: 50px;
+	list-style-type: none;
+}
+li a{
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+}
+li a:hover{
+	background-color: rgba(14, 116, 199, 0.4);
+}
+#container{
+	display: flex;
+	flex-wrap: wrap;
+}
+#container>a div{
+	width: 180px;
+	height: 240px;
+	margin: 10px;
+	/*background-color: rgba(14, 116, 199, 0.4);*/
+	text-align: center;
+	border: 1px solid black;
+}
+#container> a{
+	text-decoration: none;
+	color: rgba(14, 116, 199, 0.7);
+}
+div a img{
+	width: 150px;
+	margin: 15px;
+}
+h1{
+	color: rgba(14, 116, 199, 0.7);
+}
