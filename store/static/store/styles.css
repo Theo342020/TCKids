@@ -1,0 +1,100 @@
+/* ------------------- LOGO -------------------*/
+
+.logoPic img { /* Logo picture */
+	width: 30%;
+}
+
+/* ------------------- MENU -------------------*/
+
+.listing { /* To make the menu wrap */
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.listing>div { /* Designing the link aspect of the list element */
+	background-color: rgb(50, 115, 200);
+	width: 200px;
+	height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+}
+.listing>div a {
+	text-decoration: none;
+	color: white;
+}
+.listing>div:hover {
+	background-color: rgb(50, 115, 230);
+}
+
+/* ------------------- INDEX PAGE CLOTHES OPTIONS AREA -------------------*/
+
+.container { /* */
+	display: flex;
+	flex-wrap: wrap;
+}
+.container>a { /* */
+	float: left;
+	/*border: solid 1px rgb(50, 115, 200);*/
+	width: 200px;
+	height: 250px;
+	margin: 2%;
+}
+.container>a:hover { /* hange the color while hovering over a clothes option*/
+	background-color: rgb(50, 115, 200);
+}
+
+/* ------------------- INDEX PAGE INDIVIDUAL CARDS -------------------*/
+
+.card {  /* Designing the entire option card */
+	height: 100%;
+	text-align: center;
+}
+.topD { /* Designing the card's top portion */
+	height: 80%;
+        overflow: none;
+        margin-top: 5%;
+}
+.bottomD { /* Designing the card's bottom portion */
+	height: 20%;
+}
+.topD>img { /* Designing the card's picture */
+	width: 70%;
+}
+
+/* ------------------- CLOTHES PAGE CLOTHES AND DESCRIPTION -------------------*/
+
+.clothes { /* Designing the two top divs area */
+        display: flex;
+        flex-wrap: wrap;
+}
+.clothes div { /* Arranging the two top divs */
+        float: left;
+        height: 400px;
+        overflow: hidden;
+}
+#picDiv { /* Designing the picture div */
+	width: 33%;
+	text-align: center;
+	padding-top: 20px;
+}
+#des { /* Designing the description div */
+	width: 66%;
+}
+#item { /* Designing the picture in the picture div */
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+/* ------------------- AJUSTING WEBPAGE FOR MOBILE SCREENS ------------------- */
+
+@media (max-width: 900px){
+	.listing>div {
+		width: 100px;
+	}
+	.container>a {
+		width: 100px;
+		height: 125px;
+	}
+}

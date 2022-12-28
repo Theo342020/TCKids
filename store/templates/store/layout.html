@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>TCKids' Quality Clothing</title>
+	<meta charset="utf-8">
+	<base href="https://theo342020.github.io/TCKids/">
+	<link rel="stylesheet" type="text/css" href="{% static 'store/styles.css' %}">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+
+</head>
+<body>
+	<div class="logoPic">
+		<img src="pictures/logo.png">
+	</div>
+	<div class="listing">
+		<div class="listI"><a href="{% url 'store:index' %}"><div class="lister">Home</div></a></div>
+		<div class="listI"><a href="{% url 'store:boys' %}"><div class="lister">Boys</div></a></div>
+		<div class="listI"><a href="{% url 'store:girls' %}"><div class="lister">Girls</div></a></div>
+		<div class="listI"><a href="{% url 'store:accessories' %}"><div class="lister">Accessories</div></a></div>
+		<div class="listI"><a href="{% url 'store:accounts' %}"><div class="lister">Accounts</div></a></div>
+		<div class="listI"><a href="{% url 'store:about' %}"><div class="lister">About</div></a></div>
+	</div>
+	{% block body %}
+	{% endblock %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends "store/layout.html" %}
+
+{% block body %}
+	<div class="clothes">
+		<div id="picDiv">
+			<img id="item" src="pictures/1.jpg">
+		</div>
+		<div id="des">
+			<h3 class="price">Price: {{selectedClothes.price}}</h3>
+			<h3 class="qty">Quantity in Stock: {{selectedClothes.quantity}}</h3>		
+		</div>
+	</div>
+	<div>
+		<h3 class="description">{{name}} </h3>
+		<p>{{description}}</p>
+	</div>
+{% endblock %}

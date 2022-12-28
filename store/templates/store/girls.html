@@ -1,0 +1,19 @@
+{% extends "store/layout.html" %}
+
+{% block body %}
+	<div class="container">
+		<h1>Girls</h1>
+		{% for item in girlsClothes %}
+		<a href="{% url 'store:cPage' cost=item.cost qty=item.qty name=item.name description=item.description %}">
+			<div class="card">
+				<div class="topD">
+					<p>{{girlsClothes.picture}}</p>
+				</div>
+				<div class="bottomD">
+					<p>{{girlsClothes.description}}</p>
+				</div>
+			</div>	
+		</a>
+		{% endfor %}
+	</div>
+{% endblock%}
