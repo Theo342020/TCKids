@@ -1,0 +1,19 @@
+{% extends "store/layout.html" %}
+
+{% block body %}
+	<div class="container">
+		{% for item in Articles %}
+		<a href="{% url 'store:cPage' id=item.id %}">
+			<div class="card">
+				<div class="topD">
+					<p>{{item.picture}}</p>
+				</div>
+				<div class="bottomD">
+					<p>{{item.description}}</p>
+				</div>
+			</div>	
+		</a>
+		{% endfor %}
+	</div>
+{% endblock %}
+
