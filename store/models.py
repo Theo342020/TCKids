@@ -7,7 +7,7 @@ class Clothes(models.Model):
 	quantity = models.IntegerField()
 	price = models.FloatField()
 	size = models.IntegerField()
-	picture = models.ImageField()
+	picture = models.ImageField(upload_to='pictures')
 
 
 		

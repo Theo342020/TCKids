@@ -3,7 +3,7 @@
 {% block body %}
 	<div class="clothes">
 		<div id="picDiv">
-			<img id="item" src="pictures/1.jpg">
+			<img id="item" src="{{selectedClothes.picture.url}}">
 		</div>
 		<div id="des">
 			<h3 class="price">Price: {{selectedClothes.price}}</h3>
