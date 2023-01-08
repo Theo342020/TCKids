@@ -1,0 +1,23 @@
+{% extends "store/layout.html" %}
+
+{% block link %}
+	<base href="https://theo342020.github.io/TCKids/">
+{% end block %}
+
+{% block body %}
+	<div class="container">
+		{% for item in Articles %}
+		<a href="{% url 'store:cPage' id=item.id %}">
+			<div class="card">
+				<div class="topD">
+					<img src="{{item.picture.url}}" alt="Picture" width="20px">
+				</div>
+				<div class="bottomD">
+					<p>{{item.description}}</p>
+				</div>
+			</div>	
+		</a>
+		{% endfor %}
+	</div>
+{% endblock %}
+
